@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f0e78533-b3bc-44f1-99f9-fd16c1038448" name="remote" url="http://62.113.113.151:8080/">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+      <webServer id="b75ff7e0-4938-4347-8a5e-88ace5db66ac" name="remoteServer" url="http://89.179.236.139">
+        <fileTransfer rootFolder="/opt/tomcat/webapps" accessType="SFTP" host="62.113.113.151" port="2134" sshConfigId="bfaa6c5e-1b82-43ec-ab8e-3ee66d224079" sshConfig="tomcat@62.113.113.151:2134 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" muteSftpMessages="true" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+    <groups>
+      <group>
+        <name>default</name>
+        <servers>
+          <name value="remote" />
+        </servers>
+      </group>
+    </groups>
+  </component>
+</project>

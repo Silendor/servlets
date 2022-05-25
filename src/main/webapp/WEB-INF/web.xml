@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>indexjsp</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexjsp</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>firstjsp</servlet-name>
+        <jsp-file>/firstjsp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>firstjsp</servlet-name>
+        <url-pattern>/helloworldjsp</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>testjsp</servlet-name>
+        <jsp-file>/testJsp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>testjsp</servlet-name>
+        <url-pattern>/testjsp</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>addbookjsp</servlet-name>
+        <jsp-file>/addBook.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addbookjsp</servlet-name>
+        <url-pattern>/addbook</url-pattern>
+    </servlet-mapping>
+</web-app>
